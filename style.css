@@ -1,0 +1,209 @@
+/*
+Theme Name: My Theme
+Author: Dennis Min
+Author URI: http ://www.philsarang.com
+Description: My firest theme
+Version: 1.0.0
+*/
+
+/* 폰트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* Clearfix */
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear: both;
+}
+
+/* 전역 설정  */
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Nanum Gothic", sans-serif;
+    font-size: 14ph;
+    color:#333;
+}
+p{
+    line-height: 1.65em;
+}
+a{
+    color: #006ec3;
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* 일반 레이아웃 */
+div.container{
+    max-width: 920px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+article.post{
+    border-bottom:  2px dotted #bbb;
+}
+article.post:last-of-type{
+    border-bottom: 0;
+}
+
+/* 헤더 */
+.site-header{
+    border-bottom: 2px solid #999;
+}
+
+/* 풋터 */
+.site-footer{
+    margin-top: 30px;
+    border-top: 2px solid #999;
+}
+
+/* 메뉴 */
+.site-nav ul{
+    margin: 0;
+    padding: 0;
+}
+.site-nav ul li{
+    list-style: none;
+    float: left;
+}
+.site-nav ul::before, .site-nav ul::after{
+    content: "";
+    display: table;
+}
+.site-nav ul::after{
+    clear: both;
+}
+
+/* 헤더 메뉴 */
+.site-header .site-nav ul li a{
+    display: block;
+    padding:  10px 18px;
+    border:  1px solid #999;
+    border-bottom: 0;
+    margin-right: 5px;
+}
+.site-header .site-nav ul li a:hover{
+    background-color: #ececec;
+}
+.site-header .site-nav ul li.current-menu-item a{
+    background-color: #006ec3;
+    color: white;;
+}
+
+/* 하단 메뉴 */
+.site-footer .site-nav ul li{
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1px dotted #999;
+}
+.site-footer .site-nav ul li:last-of-type{
+    border-right: 0;
+}
+
+/* 페이지 */
+article.page h2{
+    font-size: 2rem;
+}
+.content-box{
+    padding: 30px 30px;
+}
+
+/* 페이지 서브메뉴 */
+.site_nav.sub-nav{
+    display: table;
+    width: 100%;
+    margin: 0;
+}
+.site-nav.sub-nav ul li{
+    width: 33%;
+}
+.site-nav.sub-nav ul li a{
+    display: table-cell;
+    width: 33%;
+    border: 2px solid #fdd043;
+    padding: 10px 20px;
+    border-right: 0;
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+.site-nav.sub-nav ul li:last_of_type a{
+    border-right: 2px solid #fdd043;
+}
+.site-nav.sub-nav ul li a:hover, .site-nav.sub-nav ul li.current_page_item a {
+    background-color: #fdd043;
+    color: white;
+}
+.site-nav.sub-nav ul li.current_page_ancestor a {
+    background-color: #006ec3;
+    color: white;
+}
+
+
+/* 푸터 페이지 */
+/* 크롬에서는 float 작동 안됨 */
+.info-box{
+    width: 30%;
+    float: right;
+    margin: 0 0 30px 30px;
+    padding:  20px;
+    background-color: #eee;
+}
+.info-box p{
+    font-size: 0.75rem;
+}
+
+/* 포스트 */
+.post h2{
+    margin-bottom: 0;
+
+}
+p.post-info{
+    font-size: 0.7rem;
+    color: #808080;
+}
+p.post-info a{
+    color: #808080;
+    border-bottom: 1px solid #808080;
+}
+img.attachment-custom, img.not-found{
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+img.not-found{
+    width: 320px;
+    height: 200px;
+}
+/* 구분선
+article.post{
+    padding-bottom: 20px;
+}
+*/
+
+
+
+
+
+
+
+/* 업무영역 페이지 */
+/* 크롬에서는 float 작동 안됨 */
+/*
+.title-column{
+    width: 30%;
+    float: left;
+}
+.content-column{
+    width: 70%;
+    float: right;
+}
+*/
